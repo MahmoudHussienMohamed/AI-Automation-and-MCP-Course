@@ -109,32 +109,3 @@ class OpenAIAgent:
 
     def clear_history(self):
         self.history = [self.history[0]]
-
-
-if __name__ == "__main__":
-    system_prompt = """You're emotion expert classifier, you will get user's feedback about our products, classify his feelings."""
-    template = """
-answer ONLY with json object reflecting the feelings of user as:
-    {{"class": <feelings>, "reason": <detailed-explaination>}}
-user feedback: {query}
-"""
-    # bot = OpenAIAgent(system_prompt="You are a witty cooking mentor. Keep advice concise.", prompt=template)
-    bot = OpenAIAgent(system_prompt, template)
-
-    
-    while True:
-        user_query = input("\n🧔: ")
-        print(template.format(query=user_query))
-        if user_query.lower() in ["exit", "quit"]:
-            break
-        print("🤖: ", end="", flush=True)
-        for chunk in bot.stream_chat(user_query):
-            print(chunk, end="", flush=True)
-        print(bot.nonstream_chat(user_query))
-
-        print()
-# TEMPLATE = """
-# You're technical support engineer in software company. Help user with his inquiry.
-# user inquiry: {query}
-# """
-# print(TEMPLATE.format(query="Hi there!"))
