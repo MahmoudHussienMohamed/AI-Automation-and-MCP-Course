@@ -8,7 +8,12 @@ You will use the provided `OpenAIAgent` class to interact with the LLM. Note tha
 * Use `stream_chat(query)` for tasks generating longer text where reading in real-time is beneficial.
 
 **Important Setup Step:**
-Before running any code, you must create a `.env` file in the root of this task directory with the following content:
+1. Install the required Python libraries:
+```bash
+pip install openai python-dotenv
+```
+
+2. Before running any code, you must create a `.env` file in the root of this task directory with the following content:
 ```env
 OPENAI_API_KEY=""
 OPENAI_CHAT_MODEL="gpt-5.2"
