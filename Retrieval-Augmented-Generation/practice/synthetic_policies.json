@@ -1,0 +1,107 @@
+[
+  {
+    "text": "Our refund policy allows returns within 30 days of purchase. Items must be in original packaging with a receipt.",
+    "metadata": {
+      "department": "sales",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Remote work policy (2022): employees may work remotely up to 10 days per year.",
+    "metadata": {
+      "department": "hr",
+      "year": 2022
+    }
+  },
+  {
+    "text": "Remote work policy (2024): employees may work fully remotely. Prior approval from direct manager is required.",
+    "metadata": {
+      "department": "hr",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Travel Expenses (2024): Flights must be booked economy class unless flight duration exceeds 8 hours. Hotel budget is capped at $200 per night.",
+    "metadata": {
+      "department": "finance",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Travel Expenses (2023): Flights must be booked economy class. Hotel budget is capped at $150 per night.",
+    "metadata": {
+      "department": "finance",
+      "year": 2023
+    }
+  },
+  {
+    "text": "Equipment Usage (2024): Laptops are upgraded every 3 years. Personal use of company laptops is strictly prohibited. Use VPN for all external networks.",
+    "metadata": {
+      "department": "it",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Equipment Usage (2022): Laptops are upgraded every 4 years. Personal use of company laptops is allowed with restrictions.",
+    "metadata": {
+      "department": "it",
+      "year": 2022
+    }
+  },
+  {
+    "text": "Paid Time Off (2024): Employees receive 20 days of paid vacation annually. Up to 5 days can carry over to the next year.",
+    "metadata": {
+      "department": "hr",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Sick Leave (2024): Employees are entitled to 10 paid sick days per year. A doctor's note is required for consecutive sick leaves exceeding 3 days.",
+    "metadata": {
+      "department": "hr",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Code of Conduct (2024): We enforce a zero-tolerance policy against discrimination and harassment. All employees must complete annual compliance training.",
+    "metadata": {
+      "department": "hr",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Data Security (2024): Passwords must be at least 14 characters long and changed every 90 days. Multi-factor authentication is mandatory for all internal tools.",
+    "metadata": {
+      "department": "it",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Vendor Onboarding (2024): All new vendors must pass a security review and sign an NDA before engaging in business. Vendor contracts must be renewed annually.",
+    "metadata": {
+      "department": "finance",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Office Access (2024): ID badges must be visible at all times. Visitors must be signed in at the front desk and escorted while on premises.",
+    "metadata": {
+      "department": "facilities",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Expense Reimbursement (2024): All expense reports must be submitted within 15 days of the transaction. Receipts are required for any expense over $25.",
+    "metadata": {
+      "department": "finance",
+      "year": 2024
+    }
+  },
+  {
+    "text": "Social Media Policy (2024): Employees must state that opinions are their own when posting about the company. Confidential information must not be shared.",
+    "metadata": {
+      "department": "marketing",
+      "year": 2024
+    }
+  }
+]
