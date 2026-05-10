@@ -53,5 +53,5 @@ Scaling to multi-agent architectures, security, and production deployment.
 
 **Clone the repository:**
    ```bash
-   git clone [https://github.com/MahmoudHussienMohamed/AI-Automation-and-MCP-Course.git](https://github.com/MahmoudHussienMohamed/AI-Automation-and-MCP-Course.git)
+   git clone https://github.com/MahmoudHussienMohamed/AI-Automation-and-MCP-Course.git
    cd AI-Automation-and-MCP-Course
