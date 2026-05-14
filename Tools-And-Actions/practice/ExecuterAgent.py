@@ -1,10 +1,6 @@
 from OpenAIAgent import OpenAIAgent
 from tools import *
-
-class ToolExecutionResult:
-    def __init__(self, success: bool, content: tuple[dict, dict]|list[dict]):
-        self.success = success
-        self.content = content
+import json
 
 class ExecuterAgent(OpenAIAgent):
     def __init__(
