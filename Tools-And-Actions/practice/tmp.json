@@ -1,0 +1,263 @@
+{
+  "add_numbers": {
+    "function": "<function add_numbers at 0x0000021C46A9DDA0>",
+    "schema": {
+      "type": "function",
+      "name": "add_numbers",
+      "description": "Add two numbers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "type": "integer",
+            "description": "First number"
+          },
+          "b": {
+            "type": "integer",
+            "description": "Second number"
+          }
+        },
+        "required": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    "description": "Add two numbers.\na: First number\nb: Second number\n"
+  },
+  "multiply_numbers": {
+    "function": "<function multiply_numbers at 0x0000021C46A9E020>",
+    "schema": {
+      "type": "function",
+      "name": "multiply_numbers",
+      "description": "Multiply two numbers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "a": {
+            "type": "number",
+            "description": "First number"
+          },
+          "b": {
+            "type": "number",
+            "description": "Second number"
+          }
+        },
+        "required": [
+          "a",
+          "b"
+        ]
+      }
+    },
+    "description": "Multiply two numbers.\na: First number\nb: Second number\n"
+  },
+  "get_current_time": {
+    "function": "<function get_current_time at 0x0000021C46A9E2A0>",
+    "schema": {
+      "type": "function",
+      "name": "get_current_time",
+      "description": "Get the current date and time in ISO format.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    "description": "Get the current date and time in ISO format.\n    "
+  },
+  "search_wikipedia": {
+    "function": "<function search_wikipedia at 0x0000021C46A9E520>",
+    "schema": {
+      "type": "function",
+      "name": "search_wikipedia",
+      "description": "Search Wikipedia for information.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Search query"
+          }
+        },
+        "required": [
+          "query"
+        ]
+      }
+    },
+    "description": "Search Wikipedia for information.\nquery: Search query\n"
+  },
+  "get_weather": {
+    "function": "<function get_weather at 0x0000021C46A9E7A0>",
+    "schema": {
+      "type": "function",
+      "name": "get_weather",
+      "description": "Get current weather for a city (mock implementation).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "City name"
+          }
+        },
+        "required": [
+          "city"
+        ]
+      }
+    },
+    "description": "Get current weather for a city (mock implementation).\ncity: City name\n"
+  },
+  "calculate_factorial": {
+    "function": "<function calculate_factorial at 0x0000021C46A9EA20>",
+    "schema": {
+      "type": "function",
+      "name": "calculate_factorial",
+      "description": "Calculate factorial of a number.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "n": {
+            "type": "integer",
+            "description": "The number (must be non-negative)"
+          }
+        },
+        "required": [
+          "n"
+        ]
+      }
+    },
+    "description": "Calculate factorial of a number.\nn: The number (must be non-negative)\n"
+  },
+  "convert_temperature": {
+    "function": "<function convert_temperature at 0x0000021C46A9ECA0>",
+    "schema": {
+      "type": "function",
+      "name": "convert_temperature",
+      "description": "Convert between Celsius and Fahrenheit.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "number",
+            "description": "Temperature value"
+          },
+          "from_unit": {
+            "type": "string",
+            "description": "Source unit ('C' or 'F')"
+          },
+          "to_unit": {
+            "type": "string",
+            "description": "Target unit ('C' or 'F')"
+          }
+        },
+        "required": [
+          "value",
+          "from_unit",
+          "to_unit"
+        ]
+      }
+    },
+    "description": "Convert between Celsius and Fahrenheit.\nvalue: Temperature value\nfrom_unit: Source unit ('C' or 'F')\nto_unit: Target unit ('C' or 'F')\n"
+  },
+  "list_files": {
+    "function": "<function list_files at 0x0000021C46A9EF20>",
+    "schema": {
+      "type": "function",
+      "name": "list_files",
+      "description": "List files in a directory.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "directory": {
+            "type": "string",
+            "description": "Path to directory (default: current directory)"
+          }
+        }
+      }
+    },
+    "description": "List files in a directory.\ndirectory: Path to directory (default: current directory)\n"
+  },
+  "get_file_size": {
+    "function": "<function get_file_size at 0x0000021C46A9F1A0>",
+    "schema": {
+      "type": "function",
+      "name": "get_file_size",
+      "description": "Get the size of a file in bytes.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filepath": {
+            "type": "string",
+            "description": "Path to the file"
+          }
+        },
+        "required": [
+          "filepath"
+        ]
+      }
+    },
+    "description": "Get the size of a file in bytes.\nfilepath: Path to the file\n"
+  },
+  "calculate_average": {
+    "function": "<function calculate_average at 0x0000021C46A9F420>",
+    "schema": {
+      "type": "function",
+      "name": "calculate_average",
+      "description": "Calculate the average of a list of numbers.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "numbers": {
+            "type": "string",
+            "description": "List of numbers as \"[a, b, ...]\""
+          }
+        },
+        "required": [
+          "numbers"
+        ]
+      }
+    },
+    "description": "Calculate the average of a list of numbers.\nnumbers: List of numbers as \"[a, b, ...]\"\n"
+  },
+  "text_to_uppercase": {
+    "function": "<function text_to_uppercase at 0x0000021C46A9F6A0>",
+    "schema": {
+      "type": "function",
+      "name": "text_to_uppercase",
+      "description": "Convert text to uppercase.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "The text to convert"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    "description": "Convert text to uppercase.\ntext: The text to convert\n"
+  },
+  "count_words": {
+    "function": "<function count_words at 0x0000021C46A9F920>",
+    "schema": {
+      "type": "function",
+      "name": "count_words",
+      "description": "Count the number of words in text.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "description": "The text to analyze"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    "description": "Count the number of words in text.\ntext: The text to analyze\n"
+  }
+}

@@ -1,3 +1,5 @@
+import json
+
 from tool_decorator import *
 
 @openai_tool
@@ -16,6 +18,14 @@ def multiply_numbers(a: float, b: float) -> float:
     b: Second number
     """
     return a * b
+
+@openai_tool
+def divide_numbers(a: float, b: float) -> float:
+    """Divide two numbers.
+    a: First number
+    b: Second number
+    """
+    return a / b
 
 
 @openai_tool
@@ -87,24 +97,24 @@ def convert_temperature(value: float, from_unit: str, to_unit: str) -> float:
     return "Error: Invalid units"
 
 
-@openai_tool
-def get_word_definition(word: str) -> str:
-    """Get the definition of a word.
-    word: The word to define
-    """
-    try:
-        import urllib.request
-        import json
+# @openai_tool
+# def get_word_definition(word: str) -> str:
+#     """Get the definition of a word.
+#     word: The word to define
+#     """
+#     try:
+#         import urllib.request
+#         import json
         
-        url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
-        with urllib.request.urlopen(url, timeout=5) as response:
-            data = json.loads(response.read())
-            if data:
-                definition = data[0].get('meanings', [{}])[0].get('definitions', [{}])[0].get('definition', 'No definition found')
-                return definition
-            return f"No definition found for '{word}'"
-    except Exception as e:
-        return f"Error fetching definition: {str(e)}"
+#         url = f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}"
+#         with urllib.request.urlopen(url, timeout=5) as response:
+#             data = json.loads(response.read())
+#             if data:
+#                 definition = data[0].get('meanings', [{}])[0].get('definitions', [{}])[0].get('definition', 'No definition found')
+#                 return definition
+#             return f"No definition found for '{word}'"
+#     except Exception as e:
+#         return f"Error fetching definition: {str(e)}"
 
 
 @openai_tool
@@ -136,8 +146,10 @@ def get_file_size(filepath: str) -> str:
 @openai_tool
 def calculate_average(numbers: list) -> float:
     """Calculate the average of a list of numbers.
-    numbers: List of numbers
+    numbers: List of numbers as "[a, b, ...]"
     """
+    if not isinstance(numbers, list):
+        numbers = json.loads(numbers)
     if not numbers:
         return 0
     return sum(numbers) / len(numbers)
