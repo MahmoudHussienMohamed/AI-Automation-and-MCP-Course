@@ -13,7 +13,7 @@ from tools import TOOLS
 # print(agent.chat(query))
 
 # query = input("Your Query: ")
-# for chunk in agent.stream_chat("Explain LCEL briefly"):
+# for chunk in agent.stream_chat(query):
 #     print(chunk, end="", flush=True)
 
 
@@ -24,6 +24,8 @@ from tools import TOOLS
 
 # rag.ingest("محمود حسين محمد مهندس ذكاء اصطناعي.")
 # rag.ingest("محمود شغال في شركة مزيد أي تي.")
+# rag.ingest("Mahmoud doesn't like pancakes")
+
 # query = input("Your Query: ")
 # print(rag.rag_chat(query))
 
