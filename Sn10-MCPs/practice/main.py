@@ -3,7 +3,7 @@ import asyncio
 from ExecuterAgent import ExecutorAgent
 
 
-SERVERS_DIR = os.path.dirname(os.path.abspath(__file__))
+SERVERS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'servers')
 
 TOOLS_PATH = os.path.join(SERVERS_DIR, "tools.py")
 NOTES_PATH = os.path.join(SERVERS_DIR, "notes.py")

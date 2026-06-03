@@ -1,10 +1,11 @@
-import os
 import json
+from pathlib import Path
 from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("notes")
 
-NOTES_FILE = (os.path.dirname(os.path.abspath(__file__)), "notes.json")
+
+NOTES_FILE = Path(__file__).resolve().parent / "notes.json"
 
 
 def _load() -> dict:
