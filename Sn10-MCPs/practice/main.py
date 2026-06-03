@@ -28,9 +28,10 @@ executor = ExecutorAgent(
 )
 
 async def main():
-    query = input("Your Query: ")
-    response = await executor.execute(query)
-    print(response)
+    while True:
+        query = input("Your Query: ")
+        response = await executor.execute(query)
+        print(f'\nAgent: {response}')
 
 if __name__ == '__main__':
     asyncio.run(main())

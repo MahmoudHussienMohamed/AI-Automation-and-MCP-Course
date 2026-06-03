@@ -6,7 +6,7 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP("utilities")
 
 @mcp.tool()
-def add_numbers(a: float, b: float) -> int:
+def add_numbers(a: float, b: float) -> float:
     """Add two numbers."""
     return a + b
 
