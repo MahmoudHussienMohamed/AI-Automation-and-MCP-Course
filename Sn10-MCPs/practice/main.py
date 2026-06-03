@@ -3,15 +3,20 @@ import asyncio
 from ExecuterAgent import ExecutorAgent
 
 
-SERVER_PATH = os.path.join(
-    os.path.dirname(os.path.abspath(__file__)),
-    "tools.py"
-)
+SERVERS_DIR = os.path.dirname(os.path.abspath(__file__))
+
+TOOLS_PATH = os.path.join(SERVERS_DIR, "tools.py")
+NOTES_PATH = os.path.join(SERVERS_DIR, "notes.py")
 
 config = {
     "utilities": {
         "command": "python",
-        "args": [SERVER_PATH],
+        "args": [TOOLS_PATH],
+        "transport": "stdio",
+    },
+    "notes": {
+        "command": "python",
+        "args": [NOTES_PATH],
         "transport": "stdio",
     }
 }
